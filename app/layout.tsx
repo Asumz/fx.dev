@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
           {children}
-          <Banner />
+          {/* <Banner /> */}
         </div>
       </body>
     </html>

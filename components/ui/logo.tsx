@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Logo() {
   return (
-    <Link href="/" className="block" aria-label="Cruip">
+    <Link href="/" className="block" aria-label="FX Dev">
       <svg className="h-8 w-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient

@@ -75,31 +75,17 @@ export default function MobileMenu() {
           <ul className="px-5 py-2">
             <li>
               <Link
-                href="/signin"
-                className="flex w-full justify-center py-2 font-medium text-gray-600 hover:text-gray-900"
+                className="flex py-2 text-gray-600 hover:text-gray-900"
+                href="https//asumz.pages.dev"
+                target="_blank"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Sign in
+                Blog
               </Link>
             </li>
             <li>
-              <Link
-                href="/signup"
-                className="btn-sm my-2 w-full bg-gray-900 text-gray-200 hover:bg-gray-800"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                <span>Sign up</span>
-                <svg
-                  className="-mr-1 ml-2 h-3 w-3 shrink-0 fill-current text-gray-400"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
-                    fill="#999"
-                    fillRule="nonzero"
-                  />
-                </svg>
+              <Link className="flex py-2 text-gray-600 hover:text-gray-900" href="/about">
+                About
               </Link>
             </li>
           </ul>
