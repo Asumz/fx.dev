@@ -7,16 +7,11 @@ import 'aos/dist/aos.css'
 
 import Footer from '@/components/ui/footer'
 
-export default function DefaultLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {  
-
+export default function DefaultLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     AOS.init({
       once: true,
-      disable: 'phone',
+      // disable: 'phone',
       duration: 700,
       easing: 'ease-out-cubic',
     })
@@ -24,11 +19,7 @@ export default function DefaultLayout({
 
   return (
     <>
-      <main className="grow">
-
-        {children}
-
-      </main>
+      <main className="grow">{children}</main>
 
       <Footer />
     </>
