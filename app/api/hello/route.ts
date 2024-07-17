@@ -9,11 +9,12 @@ interface hitokotoResponse {
   hitokoto: string
 }
 // TODO 错误处理
-export async function hitokoto(): Promise<hitokotoResponse> {
+export async function hitokoto(): Promise<hitokotoResponse | undefined> {
   let res = await fetch('https://v1.hitokoto.cn/?c=i&encode=json', { cache: 'no-store' })
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data')
+    // throw new Error('Failed to fetch data')
+    return
   }
 
   return res.json()
